@@ -35,6 +35,7 @@ function VerifyEmail(email){
 }
 function ValidateEmail(){
     const vemail = email.value.trim()
+    const email_value = document.querySelector('.email_value')
     if(vemail === '' || !VerifyEmail(vemail)){
         err_msg.style.opacity = '1'
         err_msg.style.color='red'
@@ -47,6 +48,11 @@ function ValidateEmail(){
         err_msg.style.color='green'
         err_msg.textContent ='valid email'
         LaunchModel();
+        const desc = document.querySelector('.desc')
+        email_value.style.fontWeight='bold'
+        email_value.textContent = vemail
+        desc.style.lineHeight = '18px'
+
         
     }
 }

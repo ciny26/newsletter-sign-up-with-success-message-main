@@ -18,6 +18,9 @@
     font-size: 40px;
     text-align: left;
 }
-.model > *{
-    margin-bottom: 16px;
+.model > * {
+    margin-bottom: 25px;
+}
+.desc{
+    margin: 0 0 2px 0;
 }
