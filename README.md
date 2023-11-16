@@ -9,15 +9,15 @@ it built using with HTML , CSS , Javascript
 
 ## Screenshots
 
-![Home](screenshots/Desktop screenshot.jpg)
+![Home](screenshots/Desktop_screenshot.jpg)
 *Home Page of the Challenge.*
-![Mobile-view](screenshots/Mobile screenshot.jpg)
+![Mobile-view](screenshots/Mobile_screenshot.jpg)
 *Home Page mobile view of the Challenge.*
-![Error](screenshots/error screenshot.jpg)
+![Error](screenshots/error_screenshot.jpg)
 *Error case.*
-![Succes](screenshots/succes active screenshot.jpg)
+![Succes](screenshots/succes_active_screenshot.jpg)
 *Validation email succed case.*
-![Model](screenshots/model screenshot)
+![Model](screenshots/model_screenshot)
 *Feature Page showcasing the amazing capabilities.*
 
 ## Files
