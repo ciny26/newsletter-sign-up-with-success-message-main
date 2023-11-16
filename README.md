@@ -17,7 +17,7 @@ it built using with HTML , CSS , Javascript
 *Error case.*
 ![Succes](screenshots/succes_active_screenshot.jpg)
 *Validation email succed case.*
-![Model](screenshots/model_screenshot)
+![Model](screenshots/model_screenshot.jpg)
 *Feature Page showcasing the amazing capabilities.*
 
 ## Files
