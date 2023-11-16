@@ -6,6 +6,7 @@
 
 ### Neutral*/
 :root{
+  --Tomato: hsl(4, 100%, 67%);
 --Dark-Slate-Grey: hsl(234, 29%, 20%);
 --Charcoal-Grey: hsl(235, 18%, 26%);
 --Grey: hsl(231, 7%, 60%);
@@ -35,6 +36,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
   }
   body {
     color: var(--Dark-Slate-Grey);
@@ -62,50 +64,130 @@
     
   }
   .info-container{
+    min-width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 0;
     background-color: var(--White);
+    margin: 0 10px;
     padding: 1rem 1.5rem;
     border-radius: 1rem;
   }
   .left-side{
-    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 50%;
+    min-width: 288px;
+    min-height: 426px;
+    max-height: 490px;
   }
   .infos{
     margin-bottom: 1rem;
   }
-  .right-side{
-    max-width: 40%;
-  }
-  .right-side > div >svg{
-    width: 100%;
-    height: 100%;
-  }
+  
   .check-ele{
     display: flex;
     align-items: center;
-    margin-top:-10px ;
+    margin-top: -15px;
   }
   .check-ele > svg{
-    margin-right: 6px;
+    margin-right: 8px;
   }
   form{
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
   }
+  .label_err_container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  .err_msg{
+    margin: 0;
+    text-align: center;
+    
+  }
   form > input , button{
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     height: 2.5rem;
     border-radius: 8px;
+    border: var(--Grey) solid 1px;
+    outline: none;
+  }
+  form > button:focus{
+    
+    outline: none;
   }
   button{
     color: var(--White);
     background-color: var(--Dark-Slate-Grey);
   }
+  button:hover{
+    border: transparent;
+    background: linear-gradient(90deg, rgba(245,152,168,1) 36%, rgba(252,176,69,1) 100%);
+    cursor: pointer;
+  }
+
+  /*right side*/
+  .right-side{
+    max-width: 40%;
+    min-width: 288px;
+    min-height: 510px;
+  }
+  .illust-signup-cont{
+    min-width: 288px;
+    min-height: 510px;
+  }
+  .desktop-svg {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 510px;
+  }
+  @media screen and (max-width:650px) {
+    .container{
+      margin: 0;
+      padding: 0;
+    }
+    .info-container{
+      margin: 0;
+      padding: 0;
+      min-width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--White);
+      
+      padding: 1rem;
+      border-radius: 1rem;
+    }
+    .right-side{
+      order: -1;
+      min-width: 100%;
+      min-height:auto;
+    }
+    .illust-signup-cont{
+      min-width: 100%;
+      min-height: auto;
+    }
+    .desktop-svg {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      min-height:auto;
+    }
+    
+    .left-side{
+      padding: 2px 1rem;
+      min-width: 280px;
+      width: 90%;
+      
+    }
+  }
+ 
 
   
 
